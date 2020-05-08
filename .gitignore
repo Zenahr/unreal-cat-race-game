@@ -14,6 +14,7 @@ Saved
 *.xcworkspace
 *.log
 
-/Backup
+Backup
 /Content
-/Saved
+Saved
+Videos
