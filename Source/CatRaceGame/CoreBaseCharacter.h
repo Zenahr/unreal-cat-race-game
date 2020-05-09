@@ -27,6 +27,16 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	void MoveForward(float Value);
+	void MoveRight(float Value);
+	void TurnAtRate(float Value);
+	void LookUptAtRate(float Value);
+
+	UPROPERTY(EditAnywhere, Category = "Camera")
+		float BaseTurnRate;
+	UPROPERTY(EditAnywhere, Category = "Camera")
+		float BaseLookUpAtRate;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
